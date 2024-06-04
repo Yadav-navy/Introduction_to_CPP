@@ -16,17 +16,16 @@ int main(){
     int mini = INT_MAX;
 
     for (int i =0 ; i < (size-1) ; i++){
-        mini = INT_MAX;
-        int mini_j = -1;
-        for (int j = i ; j < size ; j++){
-            if (arr[j] < mini){
-                mini = arr[j];
-                mini_j = j;  }
+        mini = i; //considering first element as minimum kyuki agr isse choti valueexist krti
+        for (int j = i ; j < size ; j++){  // hai to humme usse swap krna hoga correct value ke sath
+            if (arr[j] < arr[mini]){        
+                mini = j;  }
             }
-        swap(arr[i],arr[mini_j]);
+        swap(arr[i],arr[mini]);
         }
     printArray(arr,5);
     cout << endl;
 
     
     }
+    
