@@ -40,5 +40,7 @@ int main(){
     reverse(ch,size);
     cout << "Reversed String is " << ch << endl;
 
+    cout << "end" << endl;
+ 
 
 }
